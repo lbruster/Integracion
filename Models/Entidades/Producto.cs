@@ -11,7 +11,7 @@ namespace Models.Entidades
     public class Producto
     {
         [Key]
-        [Column("ProductoId")]        
+        [Column("ProductoId")]
         public int Id { get; set; }
 
         public string NombreProducto { get; set; }
@@ -29,5 +29,6 @@ namespace Models.Entidades
 
         [ForeignKey("MarcaId")]
         public Marca Marca { get; set; }
+        public PrecioOferta Promocion { get; set; }
     }
 }

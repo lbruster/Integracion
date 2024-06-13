@@ -16,5 +16,7 @@ namespace Models.Dtos
         public decimal Precio { get; set; }
 
         public decimal Costo { get; set; }
+        public decimal PrecioActual { get; set; }
+        public string TextoPromocional { get; set; }
     }
 }
